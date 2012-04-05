@@ -6,12 +6,12 @@ There are two branches:
 * The `master` branch provides a template for a _spray on Jetty_ application.
 * The `spray-can` branch provides a template for a _spray on spray-can_ application.
 
-You are currently on the `master` branch.
+You are currently on the `master-1.0-M1` branch.
 The template application here uses the following dependencies:
 
 - Scala 2.9.1
-- Akka 1.3.1
-- _spray-server_ 0.9.0
+- Akka 2.0
+- _spray-server_ 1.0-M1
 - Jetty 8.1.0
 - SBT 0.11.2
 
@@ -47,7 +47,7 @@ Follow these steps to get started:
 
 Apart from the Scala sources in the `src/main/scala` tree the following non-Scala configuration files are important:
 
-* `src/main/resources/akka.conf`, the combined Akka and _spray_ configuration file 
+* `src/main/resources/application.conf`, the combined Akka and _spray_ configuration file
 * `src/main/resources/logback.xml`, the config file for the [SLF4J] logging backend "logback" (not required but recommended)
 * `src/main/webapp/WEB-INF/web.xml`, the config file for the Jetty instance used by SBTs web plugin
 
